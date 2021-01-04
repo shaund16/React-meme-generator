@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&display=swap');
+body{
+  margin: 0;
+  backGround-color: whitesmoke;
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  backGround: #6441A5;
+}
+
+header > img {
+  height: 80%;
+  margin-left: 10%;
+}
+
+header > p {
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 60px;
+  font-family: 'Hyeon', sans-serif;
+
+}
+
+.meme {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.meme > img {
+  width: 100%;
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Anton', sans-serif;
+  
+
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+.meme-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  backGround: #6441A5;
+}
+
+@media screen and (max-width: 425px) {
+  header > p {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  header > p {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header > p {
+    font-size: 27px;
+  }
+  
+  form.meme-form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .meme-form > input {
+    width: 50%;
+  }
+  .meme > h2{
+   font-size: 18px;
+  }
+
+  .meme-form > button {
+    border: none;
+    font-family: VT323, monospace;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: white;
+    backGround: #6441A5;
+  }
+
+}
